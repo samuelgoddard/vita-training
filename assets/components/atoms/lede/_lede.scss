@@ -1,0 +1,21 @@
+// ==========================================================================
+// Lede Atom
+// ==========================================================================
+
+.lede {
+    // Apply font styling to all elements within the callout
+    &, > p {
+        font-size: ms(0);
+        font-weight: 500;
+
+        @include respond-to(medium) {
+            font-size: ms(1, $thread: desktop);
+        }
+    }
+
+    // Trim the top spacing of the first child
+    > *:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

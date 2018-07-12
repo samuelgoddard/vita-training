@@ -1,0 +1,51 @@
+<form>
+  <div class="control">
+    {% render '@label' %}
+    {% render '@input' %}
+  </div>
+  <div class="control">
+    {% render '@label' %}
+    {% render '@input' %}
+  </div>
+
+  <div class="control p-top-double">
+    {% render '@label' %}
+    {% render '@textarea' %}
+  </div>
+
+  <div class="control p-top-double">
+    {% render '@label' %}
+    <span class="control__caption">Must be 20 characters long</span>
+    {% render '@input--password' %}
+  </div>
+
+  <div class="control has--success">
+    {% render '@label' %}
+    {% render '@input--password' %}
+    <span class="control__caption">This isn't successfull</span>
+  </div>
+
+  <div class="control has--warning">
+    {% render '@label' %}
+    {% render '@input--password' %}
+    <span class="control__caption">This isn't successfull</span>
+  </div>
+
+  <div class="control has--error">
+    {% render '@label' %}
+    {% render '@input--password' %}
+    <span class="control__caption">This isn't successfull</span>
+  </div>
+
+  <div class="control p-top-double">
+    {% render '@label' %}
+    {% render '@select' %}
+  </div>
+
+  <div class="control p-top-double">
+    {% render '@label' %}
+    {% render '@checkbox' %}
+    {% render '@checkbox' %}
+    {% render '@checkbox' %}
+  </div>
+</form>

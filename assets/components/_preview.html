@@ -1,0 +1,39 @@
+{%- set noPad = false -%}
+{%- set dark = false -%}
+{% if _target.context.preview %}
+    {% if 'dark' in _target.context.preview %}
+        {% set dark = true %}
+    {% endif %}
+    {% if 'noPad' in _target.context.preview %}
+        {% set noPad = true %}
+    {% endif %}
+{% endif %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Preview Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link media="all" rel="stylesheet" href="{{ '/styles/main.css' | path }}">
+
+        <style>
+            body {
+                {% if dark %}
+                    background: black;
+                {% else %}
+                    background: white;
+                {% endif %}
+                {% if not noPad %}
+                    margin: 25px;
+                {% endif %}
+            }
+        </style>
+    </head>
+    <body class="js" contenteditable="contenteditable">
+
+        {{ yield }}
+
+    </body>
+</html>

@@ -1,0 +1,14 @@
+title: "Meta"
+status: "ready"
+
+context:
+  meta:
+    message: Meta
+
+variants:
+  -
+    name: highlight
+    context:
+      meta:
+        message: Meta Highlight
+        modifier: meta--highlight

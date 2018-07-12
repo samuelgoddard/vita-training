@@ -1,0 +1,33 @@
+// ==========================================================================
+// Chevron Atom
+// ==========================================================================
+
+// Build the actual chevron using borders
+@mixin chevron {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: rem-calc(4) solid transparent;
+    border-right: rem-calc(4) solid transparent;
+    border-top: rem-calc(5) solid palette(primary);
+}
+
+// Init the default chevron (points down)
+.chevron {
+    @include chevron;
+}
+
+// Chevron points right
+.chevron--right {
+  transform: rotate(-90deg);
+}
+
+// Chevron points up
+.chevron--up {
+    transform: rotate(180deg);
+}
+
+// Chevron points left
+.chevron--left {
+    transform: rotate(90deg);
+}

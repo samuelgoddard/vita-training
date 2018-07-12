@@ -1,0 +1,44 @@
+// ==========================================================================
+// Accordion Molecule
+// ==========================================================================
+
+// The inner content of the accordion (where the text lives)
+.m-accordion__content {
+    @include trim();
+    display: none;
+    padding: spacing(base 0);
+
+    &.is--open,
+    .no-js & {
+        display: block;
+    }
+}
+
+.m-accordion__item {
+    // Apply padding to the top of an accordion item when it's stacked (adjascent)
+    & + .m-accordion__item {
+        padding-top: spacing(18);
+    }
+    // Change the chevron rotation wehn the item is active
+    &.is--open {
+        .m-accordion__chevron {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+// Accordion title styling
+.m-accordion__title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid palette(grey);
+    padding-bottom: spacing(17);
+}
+
+// The actual text within the title section of the accordion
+.m-accordion__title-text {
+    margin: 0;
+    padding-left: spacing(10);
+    padding-right: spacing(10);
+}

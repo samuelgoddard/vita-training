@@ -1,0 +1,48 @@
+// ==========================================================================
+// Meta Atom
+// ==========================================================================
+
+.meta {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: ms(-1);
+    padding-bottom: spacing(2);
+
+    // Color any element within the meta-title
+    &,
+    & > a {
+        color: palette(secondary);
+    }
+
+    // Link styling within meta-title
+    > a {
+        @include link() {
+            color: palette(secondary);
+            text-decoration: none;
+        }
+        @include link-hover() {
+            color: palette(secondary);
+            text-decoration: underline;
+        }
+    }
+}
+
+// 'Highlight' modifier, essentially a more prominant meta, often paired with 'meta' for nice headings etc
+.meta--highlight {
+    font-size: ms(0);
+
+    &,
+    & > a {
+        color: palette(primary);
+    }
+
+    > a {
+        @include link() {
+            color: palette(primary);
+        }
+        @include link-hover() {
+            color: palette(primary);
+        }
+    }
+}

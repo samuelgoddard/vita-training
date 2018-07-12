@@ -1,0 +1,10 @@
+global:
+  category: 'Font Sizes'
+  type: 'number'
+props:
+  base:
+    value: 16
+    comment: 'base'
+  desktop:
+    value: 16
+    comment: 'desktop'

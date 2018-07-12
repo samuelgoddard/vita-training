@@ -1,0 +1,6 @@
+<button class="burger {{ burger.modifier }}">
+    <div class="burger__icon"></div>
+    {% if burger.message %}
+        <div class="burger__text">{{ burger.message }}</div>
+    {% endif %}
+</button>

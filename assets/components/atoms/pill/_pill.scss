@@ -1,0 +1,15 @@
+// ==========================================================================
+// Pill Atom
+// ==========================================================================
+
+.pill {
+    display: inline-block;
+    background: palette(primary);
+    color: white;
+    border-radius: rem-calc(3);
+    text-transform: uppercase;
+    font-size: ms(-1);
+    font-weight: bold;
+    padding: spacing(6 9);
+    margin-bottom: spacing(5);
+}

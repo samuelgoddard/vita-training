@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Generated
+/public
+/assets/js/design/
+/assets/components/design/
+/component-library
+*.map.css
+/html/assets/
+
+# Platform
+.sublime-project
+.DS_Store
+.vscode
+example.sublime-project
+yarn-error.log

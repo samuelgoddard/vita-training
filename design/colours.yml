@@ -1,0 +1,30 @@
+---
+# @todo add masthead and standard design token intro
+global:
+  category: 'Visual'
+  type: 'color'
+props:
+  black:
+    value: '#000000'
+    comment: 'Black'
+  white:
+    value: '#FFFFFF'
+    comment: 'White'
+  grey:
+    value: '#EFEFEF'
+    comment: 'Grey: Generally used for backgrounds'
+  grey-mid:
+     value: '#A2A2A2'
+     comment: 'Grey: Generally used for backgrounds'
+  grey-dark:
+     value: '#4E4E4E'
+     comment: 'Grey: Generally used for backgrounds'
+  grey-light:
+    value: '#F9F9F9'
+    comment: 'Light Grey'
+  primary:
+    value: '#FF00B9'
+    comment: 'Primary: (Deep Magenta)'
+  secondary:
+    value: '#00EFEF'
+    comment: 'Secondary: (Electric Blue)'

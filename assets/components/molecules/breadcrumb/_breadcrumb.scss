@@ -1,0 +1,35 @@
+// ==========================================================================
+// Breadcrumb Molecule
+// ==========================================================================
+
+.m-breadcrumb {
+    @include hide-print();
+    margin-bottom: spacing(10);
+}
+
+.m-breadcrumb__item {
+    @include link() {
+        font-weight: bold;
+        font-size: ms(0, $thread: desktop);
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        color: tint(palette(primary), 'lighten');
+        outline: none;
+    }
+
+    // Active state (current page)
+    &.is--active {
+        @include link() {
+            font-weight: normal;
+            text-decoration: none;
+        }
+    }
+}
+
+// The '/' slash seperator between the crumb items
+.m-breadcrumb__seperator {
+    color: palette(primary);
+    font-weight: bold;
+}

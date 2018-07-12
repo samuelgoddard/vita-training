@@ -1,0 +1,24 @@
+title: "Islands"
+status: "ready"
+
+context:
+  islands:
+    -
+      title: This is a default island
+      inverse: false
+    -
+      class: island--primary
+      title: This is a primary inversed island
+      inverse: true
+    -
+      class: island--secondary
+      title: This is a secondary inversed island
+      inverse: true
+    -
+      class: island--grey-dark
+      title: This is a grey-dark inversed island
+      inverse: true
+    -
+      class: island--grey
+      title: This is a grey island
+      inverse: false

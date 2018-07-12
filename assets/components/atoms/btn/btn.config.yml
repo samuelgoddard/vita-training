@@ -1,0 +1,32 @@
+title: "Buttons"
+status: "ready"
+
+context:
+  btn:
+    message: Default Button
+
+variants:
+  -
+    name: primary
+    context:
+      btn:
+        modifier: btn--primary
+        message: Button Primary
+  -
+    name: naked
+    context:
+      btn:
+        modifier: btn--naked
+        message: Naked Button
+  -
+    name: small
+    context:
+      btn:
+        modifier: btn--small
+        message: Small Button
+  -
+    name: block
+    context:
+      btn:
+        modifier: btn--block
+        message: Block Display Button

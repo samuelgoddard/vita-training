@@ -1,0 +1,63 @@
+// ==========================================================================
+// Button Atom
+// ==========================================================================
+
+// Base btn styling
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: rem-calc(2);
+    padding: spacing(15);
+    font-weight: 600;
+    font-size: ms(0);
+    transition: all ease 150ms;
+
+    @include link() {
+        background: palette(secondary);
+        color: white;
+    }
+
+    @include link-hover() {
+        background: tint(palette(secondary), "darken");
+    }
+}
+
+// Primary btn uses the same styling as the default btn with the projects primary
+// palette colours applied
+.btn--primary {
+    @include link() {
+        background: palette(primary);
+        color: white;
+    }
+
+    @include link-hover() {
+        background: tint(palette(primary), "darken");
+    }
+}
+
+// Naked btn share the same spacing params as btn however dont have a background color,
+// can be used for example to place a link inline next to a button to give the effect
+// of the proper vertical alignment
+.btn--naked {
+    @include link() {
+        background-image: none;
+        background-color: transparent;
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        color: tint(palette(primary), "darken");
+    }
+}
+
+// Small modifier, halves the padding params of whichever btn it's applied to
+.btn--small {
+    padding: spacing(10);
+    font-size: ms(-1);
+}
+
+// Modifier to change the default (inline) styling to block
+.btn--block {
+    display: block;
+}
