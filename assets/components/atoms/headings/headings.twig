@@ -3,6 +3,6 @@
 #}
 
 {% for heading in headings %}
-    <{{ heading.tag }}>{{ heading.message }}</{{ heading.tag }}>
+    <{{ heading.tag }} class="{{ modifier }}">{{ heading.message }}</{{ heading.tag }}>
 {% endfor %}
 

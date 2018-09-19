@@ -1,0 +1,50 @@
+// ==========================================================================
+// Hero Molecule
+// ==========================================================================
+
+.m-hero {
+    background: palette(secondary);
+    position: relative;
+
+}
+
+.m-hero__heading {
+    position: relative;
+
+    &:after {
+        content: " ";
+        margin-top: spacing(10);
+        margin-bottom: spacing(10);
+        display: block;
+        width: rem-calc(14);
+        height: rem-calc(3);
+        background: palette(white);
+
+        @include respond-to(medium) {
+            height: rem-calc(5);
+            margin-top: spacing(25);
+            margin-bottom: spacing(25);
+        }
+    }
+}
+
+.m-hero__subheading {
+    font-size: ms(2);
+    font-weight: 300;
+
+    @include respond-to(medium) {
+        font-size: ms(4, $thread: desktop);
+    }
+}
+
+.m-hero__message {
+    font-size: ms(0);
+
+    @include respond-to(medium) {
+        font-size: ms(1, $thread: desktop);
+    }
+
+    @include respond-to(large) {
+        font-size: ms(2, $thread: desktop);
+    }
+}

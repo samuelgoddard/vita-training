@@ -14,7 +14,7 @@ const publicPath = path.resolve(__dirname, '..', pathConfig.dest);
  */
 
 // Set the title of the project
-fractal.set('project.title', 'EXAMPLE_RENAME_ME');
+fractal.set('project.title', 'Vita Training: Design System');
 
 /**
  * Components
@@ -27,8 +27,8 @@ fractal.components.set('path', path.join(srcPath, 'assets/components'));
 fractal.components.set('default.preview', '@preview');
 
 // Use nunchucks
-fractal.components.engine('@frctl/nunjucks');
-fractal.components.set('ext', '.html');
+fractal.components.engine('@frctl/twig');
+fractal.components.set('ext', '.twig');
 
 // Collate components by default
 fractal.components.set('default.collated', true);
@@ -57,6 +57,24 @@ fractal.docs.set('path', path.join(srcPath, 'assets/docs'));
 // Where the generated static assets will be
 fractal.web.set('static.path', publicPath);
 // prefix static asset URLs
+
+fractal.components.set('statuses', {
+    prototype: {
+        label: "Prototype",
+        description: "Do not implement.",
+        color: "#FF3333"
+    },
+    wip: {
+        label: "WIP",
+        description: "Work in progress. Implement with caution.",
+        color: "#FF9233"
+    },
+    ready: {
+        label: "Ready",
+        description: "Ready to implement.",
+        color: "#29CC29"
+    }
+});
 
 // Where to output the built (static HTML) styleguide
 fractal.web.set('builder.dest',  path.resolve(__dirname, '../component-library'));

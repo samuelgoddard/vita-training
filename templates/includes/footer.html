@@ -1,24 +1,18 @@
-{#
-    Footer Molecule
-
-    @required type name description
-#}
-
 <div class="m-footer wrapper wrapper--wide">
     <div class="wrapper wrapper--thin">
         <div class="g align-v-center">
             <div class="g__col g__col-6 g__col-4@medium u-trim">
                 <a class="logo logo--small" href="#">
-                    {% render '@logo' %}
+                    {% include 'includes/logo.html' %}
                 </a>
             </div>
 
             <div class="g__col g__col-6 g__col-8@medium align-right u-text-right">
-                {% render '@btn--primary' with { message: "Email us" } %}
+                    <a href="#" class="btn btn--primary">Email us</a>
             </div>
         </div>
 
-        {% render '@hr--small' %}
+        <hr class="hr--small">
 
         <div class="g align-v-center">
             <div class="g__col g__col-12 g__col-4@medium u-trim">

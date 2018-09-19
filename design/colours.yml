@@ -5,26 +5,38 @@ global:
   type: 'color'
 props:
   black:
-    value: '#000000'
+    value: '#363738'
     comment: 'Black'
   white:
     value: '#FFFFFF'
     comment: 'White'
   grey:
-    value: '#EFEFEF'
+    value: '#F1F1F1'
     comment: 'Grey: Generally used for backgrounds'
   grey-mid:
      value: '#A2A2A2'
      comment: 'Grey: Generally used for backgrounds'
   grey-dark:
-     value: '#4E4E4E'
+     value: '#DEDFDF'
      comment: 'Grey: Generally used for backgrounds'
   grey-light:
     value: '#F9F9F9'
     comment: 'Light Grey'
   primary:
-    value: '#FF00B9'
-    comment: 'Primary: (Deep Magenta)'
+    value: '#CC0F29'
+    comment: 'Primary: (Bright Red)'
   secondary:
-    value: '#00EFEF'
-    comment: 'Secondary: (Electric Blue)'
+    value: '#800717'
+    comment: 'Secondary: (Deep Red)'
+  tertiary:
+    value: '#f68f1e'
+    comment: 'Tertiary: (Orange)'
+  danger:
+    value: '#C42A20'
+    comment: 'Danger Red'
+  warning:
+    value: '#F99B39'
+    comment: 'Warning Yellow'
+  success:
+    value: '#518C4A'
+    comment: 'Success Green'

@@ -15,3 +15,10 @@ context:
     -
       message: H4 Heading Styles
       tag: h4
+
+variants:
+  -
+    name: underlined
+    context:
+      modifier: h--underlined
+      message: Underlined Heading

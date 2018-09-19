@@ -1,0 +1,17 @@
+{#
+    Stat Block Molecule
+
+    @required type name description
+#}
+
+
+<div class="m-stat-block u-inverse">
+    <div class="m-stat-block__inner">
+        <h2 class="m-stat-block__heading">{{ heading }}</h2>
+        <p class="m-stat-block__message">{{ message }}</p>
+    </div>
+
+    <div class="m-stat-block__bg">
+        {% render '@logo-mark' %}
+    </div>
+</div>

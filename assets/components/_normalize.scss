@@ -18,9 +18,10 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
     font-family: Arial, sans-serif;
     font-weight: 300;
-    // font-family: "Courier New", Courier, monospace;
+    font-family: 'Cabin', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: palette(black);
 }
 
 /* Sectionsem

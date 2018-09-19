@@ -17,6 +17,11 @@ variants:
       modifier: btn--secondary
       message: Secondary Button
   -
+    name: tertiary
+    context:
+      modifier: btn--tertiary
+      message: Tertiary Button
+  -
     name: small
     context:
       modifier: btn--small

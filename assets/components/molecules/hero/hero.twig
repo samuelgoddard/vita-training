@@ -1,0 +1,33 @@
+{#
+    Header Molecule
+
+    @required type name description
+#}
+
+<div class="m-hero">
+    {% render '@header' %}
+
+    <div class="wrapper wrapper--thin">
+        <div class="g align-v-bottom">
+            <div class="g__col g__col-12 g__col-7@medium g__col-8@large p-top--triple p-top--oct@medium p-bottom p-bottom--quad@medium u-inverse p-right--oct@medium">
+                <h3 class="m-hero__subheading">{{ subheading }}</h3>
+                <h1 class="m-hero__heading">{{ heading }}</h1>
+
+                <p class="m-hero__message">{{ message }}</p>
+            </div>
+
+            <div class="g__col g__col-12 g__col-4@medium align-right u-trim">
+                <ul class="p-top--double p-bottom p-left@medium p-right@medium list list--fancy island">
+                    <a class="link link--bold" href="#"><li>Statistics</li></a>
+                    <a class="link link--bold" href="#"><li>About our training</li></a>
+                    <a class="link link--bold" href="#"><li>Our team of experts</li></a>
+                    <a class="link link--bold" href="#"><li>Testimonials</li></a>
+                    <a class="link link--bold" href="#"><li>Publications &amp; Presentations</li></a>
+                    <a class="link link--bold" href="#"><li>Resources</li></a>
+                    <a class="link link--bold" href="#"><li>Contact us</li></a>
+                    <a class="link link--bold" href="#"><li>E-learning</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

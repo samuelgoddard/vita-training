@@ -4,12 +4,23 @@
     @required type name description
 #}
 
-<nav class="m-header">
-    <div class="wrapper">
+<div class="m-header wrapper wrapper--wide">
+    <div class="wrapper wrapper--thin">
         <div class="g align-v-center">
-            <div class="g__col g__col-12 u-trim">
-                <h6>{{ heading }}</h6>
+            <div class="g__col g__col-6 g__col-4@medium u-trim">
+                <a class="logo" href="#">
+                    {% render '@logo' %}
+                </a>
+            </div>
+
+            <div class="g__col g__col-6 g__col-8@medium align-right u-text-right">
+                <div class="is--hidden is--visible@medium">
+                    {% render '@btn--primary' with { message: "Email your question to us" } %}
+                </div>
+                <div class="is--visible is--hidden@medium">
+                    {% render '@btn--primary' with { message: "Email us" } %}
+                </div>
             </div>
         </div>
     </div>
-</nav>
+</div>

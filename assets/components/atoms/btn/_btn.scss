@@ -57,6 +57,20 @@
     }
 }
 
+// Btn Tertiary
+.btn--tertiary {
+    @include link() {
+        border-color: palette(tertiary);
+        background: palette(tertiary);
+        color: white;
+    }
+
+    @include link-hover() {
+        border-color: tint(palette(tertiary), 'darken');
+        background: tint(palette(tertiary), 'darken');
+    }
+}
+
 
 // Naked btn share the same spacing params as btn however dont have a background color,
 // can be used for example to place a link inline next to a button to give the effect

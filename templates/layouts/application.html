@@ -4,18 +4,26 @@
     <meta charset="utf-8">
     <title>{% block title %}{{ title }}{% endblock %}</title>
 
-    <link rel="stylesheet" href="dist/styles/main.css">
+    {# Gongle Fonts  #}
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700" rel="stylesheet">
+
+    {# Stylesheets #}
+    <link rel="stylesheet" href="styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% block head %}
     {% endblock %}
   </head>
   <body>
+    {% include 'includes/header.html' %}
+
     {% block content %}
     {% endblock %}
 
+    {% include 'includes/footer.html' %}
+
     {% block javascript %}
-      <!-- <script src="dist/js/main.js"></script> -->
+      {# <script src="dist/js/main.js"></script> #}
     {% endblock %}
   </body>
 </html>

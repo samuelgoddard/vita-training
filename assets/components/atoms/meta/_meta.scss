@@ -4,13 +4,9 @@
 
 .meta {
     display: inline-block;
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: ms(-3);
-    padding-bottom: spacing(double);
-    letter-spacing: rem-calc(2);
-    line-height: 1.44;
-    // font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+    font-size: ms(0);
+    padding-bottom: spacing(10);
 
     // Color any element within the meta-title
     &,
@@ -39,15 +35,15 @@
 .meta--highlight {
     &,
     & > a {
-        color: tint(palette(primary), "darken");
+        color: palette(tertiary);
     }
 
     > a {
         @include link() {
-            color: tint(palette(primary), "darken");
+            color: palette(tertiary);
         }
         @include link-hover() {
-            color: tint(palette(primary), "darken");
+            color: palette(tertiary);
         }
     }
 }

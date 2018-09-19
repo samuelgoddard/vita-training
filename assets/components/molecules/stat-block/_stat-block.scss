@@ -1,0 +1,47 @@
+// ==========================================================================
+// Stat Block Molecule
+// ==========================================================================
+
+.m-stat-block {
+    position: relative;
+    background: palette(secondary);
+    padding: spacing(20);
+    overflow: hidden;
+    height: 100%;
+
+    @include respond-to(medium) {
+        padding: spacing(30);
+    }
+
+    @include respond-to(large) {
+        min-height: rem-calc(250);
+    }
+}
+
+.m-stat-block__heading {
+    font-size: ms(5);
+
+    @include respond-to(medium) {
+        font-size: ms(7, $thread: desktop);
+    }
+}
+
+.m-stat-block__message {
+    @include respond-to(medium) {
+        font-size: ms(1, $thread: desktop);
+    }
+}
+
+.m-stat-block__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.m-stat-block__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem-calc(250);
+    height: rem-calc(250);
+    z-index: 0;
+}

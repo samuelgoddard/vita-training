@@ -15,4 +15,4 @@ props:
     value: 960
   xlarge:
     comment: 'X-large'
-    value: 1200
+    value: 1240

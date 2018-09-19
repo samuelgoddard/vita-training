@@ -4,6 +4,7 @@
 
 .island {
     overflow-x: hidden;
+    background: white;
 }
 
 // Loop through each colour and generate a island for each
@@ -16,5 +17,15 @@
     // and darken it, then assign it to a 1px stroke bottom
     .island--#{$color}.island--bordered {
         border-bottom: rem-calc(1) solid tint($value, "darken");
+    }
+}
+
+.island--cover {
+    background-size: cover;
+    background-position: center center;
+
+    // Use a gross max-width fix instead of assigning each area a ID
+    @media screen and (max-width: 1200px) {
+        background-image: none !important;
     }
 }

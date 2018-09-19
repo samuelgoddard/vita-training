@@ -3,32 +3,26 @@
 // ==========================================================================
 
 blockquote {
-    text-align: center;
-    margin: spacing(35 0);
-    padding: spacing(25 0);
+    text-align: left;
     color: palette(black);
-    line-height: 1.44;
-    // font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
-    font-size: ms(3);
-    font-weight: bold;
-    border-top: 1px solid palette(grey);
-    border-bottom: 1px solid palette(grey);
-
-    em {
-        font-style: normal;
-        // font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
-    }
+    font-weight: normal;
+    font-style: italic;
+    border-left: 14px solid palette(grey-light);
+    padding-left: spacing(15);
+    margin-left: 0;
+    margin-right: 0;
 
     @include respond-to(medium) {
-        margin: spacing(55 0);
-        padding: spacing(35 0);
-        font-size: ms(4, $thread: desktop);
+        border-left: 19px solid palette(grey-light);
+        padding-left: spacing(30);
     }
 
-    @include respond-to(large) {
-        margin: spacing(65 0);
-        padding: spacing(40 0);
-        font-size: ms(6, $thread: desktop);
+    p {
+        font-size: ms(2);
+
+        @include respond-to(medium) {
+            font-size: ms(3, $thread: desktop);
+        }
     }
 
     cite, .cite {

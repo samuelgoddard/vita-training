@@ -1,8 +1,283 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-    <div class="wrapper">
-        <h1>{{ message }} hello</h1>
-        <a href="#" class="btn">Button</a>
+    {# Stat Blocks #}
+    <div class="wrapper wrapper--thin">
+        <div class="g p-top--triple p-top--quint@medium p-bottom--double p-bottom--quint@medium">
+            {% include 'includes/stat-blocks.html' %}
+        </div>
     </div>
+
+    {# About #}
+    <section style="background-image: url('images/background1.jpg');" class="island--cover p-top--max@xlarge p-bottom--max@xlarge" id="about">
+        <div class="wrapper island">
+            <div class="wrapper wrapper--thin">
+
+                <img class="is--visible is--hidden@xlarge p-top p-top--reset@medium" src="images/background1.jpg" />
+
+                <div class="g p-top--triple p-top--oct@medium">
+
+                    <div class="g__col g__col-12">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-6@medium">
+                                <div class="g">
+                                    <div class="g__col g__col-12 g__col-11@medium">
+
+                                        <h2 class="h--underlined">About our training</h2>
+
+                                        <p class="lede p-top--double"><strong>Victims of modern slavery are presenting in healthcare settings and are not receiving the safeguarding and care they need.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <p>The solution is not just about raising awareness. VITA training aims to improve identification, support and care for victims by equipping healthcare professionals to know what to do. It delivers practical, user-friendly, evidence-based guidance.</p>
+
+                                <p>This training has been created and refined by doctors, who regularly apply the techniques and skills they teach during their own clinical practice.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <p>More than 1000 healthcare professionals (bold) have attended VITA training. Our training has been shown to improve trainees knowledge and confidence particularly in identification, conducting the consultation and referral.</p>
+
+                                <p>Bespoke tailored training is available for NHS Foundation Trusts, General Practices, healthcare professional trainee programmes and other health services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g p-top--double p-top--quad@medium p-bottom--triple p-bottom--oct@medium">
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <h3 class="h--underlined">Training packages</h3>
+
+                                <h4 class="p-top--double">Training presentation</h4>
+                                <ul>
+                                    <li>Unlimited group sizes. </li>
+                                    <li>1 or 2 hours presentation lengths</li>
+                                </ul>
+
+                                <h4 class="p-top">Simulation training</h4>
+                                <ul>
+                                    <li>The above Training presentation </li>
+                                    <li>Minimum of 5 trainees required, maximum of 40</li>
+                                    <li>Approximately one facilitator required for every 5 trainees</li>
+                                    <li>Actors and facilitators provided</li>
+                                </ul>
+
+                                <h4 class="p-top">Training with video scenarios</h4>
+                                <ul>
+                                    <li>The above training presentation with video scenarios</li>
+                                    <li>Unlimited group sizes</li>
+                                    <li>Facilitators optional</li>
+                                    <li>3 hours duration</li>
+                                </ul>
+
+                                <h4 class="p-top">Hand-out document</h4>
+                                <ul>
+                                    <li>For all VITA Trainees</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <h3 class="h--underlined">Request a booking</h3>
+
+                        <div class="p-top--double">
+                            <p>@todo Form here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Experts #}
+    <section class="island island--grey p-top--quad p-top--quint@medium p-top--max@xlarge p-bottom--quad p-bottom--quint@medium p-bottom--max@xlarge" id="experts">
+        <div class="wrapper wrapper--thin">
+            <h2 class="h--underlined">Our team of experts</h2>
+
+            <div class="g p-top--double p-top--quad@medium">
+                <div class="g__col g__col-12 g__col-4@large">
+                    <h4>Dr Rosie Riley BSc MBChB</h4>
+
+                    <p class="lede">Founder, CEO and Trainer of VITA Training. NHS England Clinical Entrepreneur. Junior Clinical Fellow in Emergency Medicine</p>
+
+                    <p>Rosie works as doctor at a teaching hospital in London. She graduated with a medical degree and a BSc in Global Health from the University of Bristol. During 3rd year, she developed VITA Training and delivered it initially in a GP setting. Her results have been included in a Department of Health-commissioned systematic review and she has advised development of national multi-agency training materials on trafficking for NHS England in 2016. She is now a Clinical Entrepreneur for NHS England.</p>
+
+                    <a href="#" target="_blank" class="link link--primary link--bold">Connect on Linkedin</a>
+                </div>
+
+                <div class="g__col g__col-12 g__col-4@large p-top--quad p-top--reset@large">
+                    <h4>Dr Toby Bonvoisin MBChB</h4>
+
+                    <p class="lede">Co-Founder of VITA Training and Trainer</p>
+
+                    <p>z faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis.</p>
+
+                    <a href="#" target="_blank" class="link link--primary link--bold">Connect on Linkedin</a>
+                </div>
+
+                <div class="g__col g__col-12 g__col-4@large p-top--quad p-top--reset@large">
+                    <h4>Dr Lucy Willians BSc MBChB</h4>
+
+                    <p class="lede">Trainer and content-creator for e-learning</p>
+
+                    <p>Lucy works as a doctor at a teaching hospital in London. She graduated with a medical degree and a BSc in Global Health from the University of Bristol, where she wrote a thesis on human trafficking. She has also written a featured article for Student BMJ about training for medical students and advocates for inclusion of this subject in undergraduate training. She is instrumental in delivering the e-learning modules for VITA Training.</p>
+
+                    <a href="#" target="_blank" class="link link--primary link--bold">Connect on Linkedin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Testimonials #}
+    <section class="p-top--quad p-top--quint@medium p-top--max@xlarge p-bottom--quad p-bottom--quint@medium p-bottom--max@xlarge" id="testimonials">
+        <div class="wrapper wrapper--thin">
+            <h2 class="h--underlined">Testimonials</h2>
+
+            <div class="g p-top--double">
+                <div class="g__col g__col-12 g__col-6@medium">
+                    <blockquote>
+                        <p>I felt more confident dealing with (a case of a patient being identified as trafficked) following the training because I had greater understanding of the situations people who have been trafficked have to deal with; previous life situations, reasons for coming to UK and the reality of the situations they find themselves in compared to hopes and dreams they may have had, how frightened and vulnerable they must feel.</p>
+
+                        <cite>— Practice nurse, General Practice</cite>
+                    </blockquote>
+                </div>
+
+                <aside class="g__col g__col-12 g__col-5@medium align-right p-top--triple p-top--reset@medium">
+                    <div class="island island--grey-light p-top--triple p-bottom--triple p-left--triple p-right--triple p-top--quad@medium p-bottom--quad@medium p-left--quad@medium p-right--quad@medium">
+                        <h4>Publications</h4>
+                        <p>Red flags acronym cited in article in student <a href="#" class="link link--primary link--bold">British Medical Journal</a> <br/><em>2nd February 2017</em></p>
+
+                        <p>Letter of the week in the <a href="#" class="link link--primary link--bold">British Medical Journal</a> <br/><em>1st June 2017</em></p>
+
+                        <h4 class="p-top p-top--double@medium">Presentations</h4>
+
+                        <p>Poster presentation at South West Obstetrics and Gynaecology regional conference 2015<br/>
+                        PROTECT Stakeholders Workshop on Human Trafficking, Royal College of Psychiatrists 2015<br/>
+                        Poster presentation at Research in Progress, Royal Society of Tropical Medicine and Hygiene 2015<br/>
+                        Poster presentation at Yorkshire Student Royal College of General Practice conference 2015 <br/>
+                        Oral presentation and workshop at Medsin National Conference 2016<br/>
+                        Poster and oral presentation at Royal College of General Practice <br/>Annual Primary Care conference and exhibition 2017</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper--thin p-top--double p-top--quad@medium">
+            <h4>@todo images here</h4>
+        </div>
+    </section>
+
+    {# Resources #}
+    <section class="p-top--quad p-top--quint@medium p-top--max@xlarge p-bottom--quad p-bottom--quint@medium p-bottom--max@xlarge island island--grey wrapper wrapper--wide" id="resources">
+        <div class="wrapper wrapper--thin">
+            <h2 class="h--underlined">Resources</h2>
+
+            <div class="g">
+                <div class="g__col g__col-12 g__col-4@medium p-top--double">
+                    <a href="#" class="link link--primary link--bold">Human trafficking and health: a cross-sectional survey of NHS professionals’ contact with victims of human trafficking.</a>
+                    <p>Ross C, Dimitrova S, Howard LM, et al.</p>
+                </div>
+                <div class="g__col g__col-12 g__col-4@medium p-top--double">
+                    <a href="#" class="link link--primary link--bold">Global Estimates of Modern Slavery: forced labour and forced marriage.</a>
+                    <p>International Labour Office and Walk Free Foundation in partnership with International Organization for Migration, 2017</p>
+                </div>
+                <div class="g__col g__col-12 g__col-4@medium p-top--double">
+                    <a href="#" class="link link--primary link--bold">Caring For Trafficked Persons: guidance for health providers.</a>
+                    <p>International Organization for Migration, Global Initiative to Fight Human Trafficking and London School of Hygiene & Tropical Medicine, 2009</p>
+                </div>
+                <div class="g__col g__col-12 g__col-4@medium p-top--double">
+                    <a href="#" class="link link--primary link--bold">Modern Slavery and Human Trafficking: National Referral Mechanism Statistics.</a>
+                    <p>National Crime Agency, End of Year Summary 2016</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Contact Us #}
+    <section class="p-top--quad p-top--quint@medium p-top--max@xlarge p-bottom--quad p-bottom--quint@medium p-bottom--max@xlarge" id="contact">
+        <div class="wrapper wrapper--thin">
+            <h2 class="h--underlined">Contact Us</h2>
+
+            <div class="g">
+                <div class="g__col g__col-12 g__col-4@medium">
+                    <p>For more information or to see how you can get involved, contact the VITA team.</p>
+                </div>
+
+                <div class="g__col g__col-12 g__col-4@medium align-right u-text-right@medium">
+                    <a href="#" class="btn btn--primary">Email us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# About #}
+    <section style="background-image: url('images/background2.jpg');" class="island--cover p-top--max@xlarge p-bottom--max@xlarge" id="about">
+        <div class="wrapper island">
+            <div class="wrapper wrapper--thin">
+
+                <img class="is--visible is--hidden@xlarge p-top p-top--reset@medium" src="images/background2.jpg" />
+
+                <div class="g p-top--triple p-top--oct@medium">
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <img class="img--full is--hidden is--visible@medium" src="images/e-learning.jpg" alt="E-Learning" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <span class="meta meta--highlight">Coming soon</span>
+                                <h2 class="h--underlined">E-learning</h2>
+
+                                <div class="p-top--double">
+                                    <p>We are in the process of creating our online e-learning module. This module will be a useful training resource both alone and as part of our training packages. Via an interactive format, VITA e-learning re-enforces material delivered in the training presentation and simulation.</p>
+
+                                    <p>The module includes a virtual clinic, allowing trainees to put their consultation skills into practice. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g p-top--triple p-top--oct@medium p-bottom--oct@medium p-bottom--quad">
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <h3 class="h--underlined">Register interest in our e-learning module</h3>
+
+                                <div class="p-top--double">
+                                    <p>@todo form here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <div class="g">
+                            <div class="g__col g__col-12 g__col-11@medium">
+                                <p class="micro">By clicking the ‘Register’ button, you are consenting to the Vita Training and MailChimp processing your data for the purposes of sending you communications regarding our e-learning module. You may unsubscribe at any time. We are committed to protecting any personal data that you may submit to us. Such personal data is obtained only when voluntarily submitted by you. For more information please review our privacy policy.</p>
+
+                                <a href="#" class="btn btn--primary">Register your interest</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

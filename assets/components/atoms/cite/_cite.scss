@@ -4,13 +4,8 @@
 
 // Default HTML element + specific class overwrites
 cite, .cite {
-    // Trim the callout so the last child doesn't have spacing bottom
     font-style: normal;
     font-weight: bold;
     font-size: ms(-1);
-    color: palette(black);
-    line-height: 1.1;
-    text-transform: uppercase;
-    letter-spacing: 0.25px; // Apply some letter spacing to headings only for legibility
-    // font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+    color: palette(tertiary);
 }

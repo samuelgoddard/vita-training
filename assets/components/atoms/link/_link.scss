@@ -9,15 +9,14 @@
 
     // Default link uses the primary palette
     @include link() {
-        text-decoration: none;
+        text-decoration: underline;
         color: palette(black);
         transition: all ease 250ms;
         padding-bottom: spacing(3);
-        border-bottom: 1px solid palette(grey);
     }
 
     @include link-hover() {
-        border-bottom: 1px solid palette(black);
+        color: palette(primary);
     }
 
     &:focus {
@@ -32,23 +31,19 @@
 // Add primary styling for a 'primary' modifier
 .link--primary {
     @include link() {
-        border-bottom: 1px solid rgba(palette(primary), 0.2);
         color: palette(primary);
     }
     @include link-hover() {
-        border-bottom: 1px solid palette(primary);
-        color: palette(primary);
+        color: tint(palette(primary), 'darken');
     }
 }
 
 // Add secondary styling for a 'primary' modifier
 .link--secondary {
     @include link() {
-        border-bottom: 1px solid rgba(palette(secondary), 0.2);
         color: palette(secondary);
     }
     @include link-hover() {
-        border-bottom: 1px solid palette(secondary);
         color: palette(secondary);
     }
 }
@@ -75,4 +70,10 @@
 // Block display modifier
 .link--block {
     display: block;
+}
+
+.link--large {
+    @include respond-to(medium) {
+        font-size: ms(1, $thread: desktop);
+    }
 }

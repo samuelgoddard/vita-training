@@ -18,6 +18,12 @@
         color: white;
     }
 
+    .h--underlined {
+        &:after {
+            background: palette(white);
+        }
+    }
+
     a, .link {
         // Recolour all anchors and anchor hovers
         @include link() {

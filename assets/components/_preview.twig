@@ -1,4 +1,4 @@
-<!-- NoPad and dark preview context  -->
+{# NoPad and dark preview context #}
 {%- set noPad = false -%}
 {%- set dark = false -%}
 
@@ -11,7 +11,6 @@
   {% endif %}
 {% endif %}
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,10 +18,12 @@
     <title>Preview Layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {# Gongle Fonts  #}
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,600,700" rel="stylesheet">
+
     <link media="all" rel="stylesheet" href="{{ '/styles/main.css' | path }}">
 
-    <!-- Inline styling for Preview context logic at the top of this file -->
-
+    {# Inline styling for Preview context logic at the top of this file #}
     <style>
       body {
         {% if dark %}
@@ -37,10 +38,11 @@
     </style>
   </head>
 
-  <!-- contenteditable so we can easily mess with content within Fractal -->
+  {# contenteditable so we can easily mess with content within Fractal #}
   <body class="js" contenteditable="contenteditable">
     {{ yield }}
   </body>
 
-  <script src="{{ '/assets/js/main.js' | path }}"></script>
+  {# Inject JS File #}
+  {# <script src="{{ '/assets/js/main.js' | path }}"></script> #}
 </html>

@@ -16,7 +16,7 @@
     }
 
     li {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.25em;
     }
 }
 
@@ -49,6 +49,25 @@
 
 ul {
     @include list--bullet;
+}
+
+.list--fancy {
+    padding-left: 0;
+    list-style: none;
+    margin-left: 0;
+
+    li {
+        &:before {
+            border-right: 2px solid palette(primary);
+            border-bottom: 2px solid palette(primary);
+            width: rem-calc(4);
+            height: rem-calc(4);
+            transform: rotate(-45deg);
+            content: "";
+            display: inline-block;
+            margin-right: spacing(10);
+        }
+    }
 }
 
 // Declare the numbered list styling on both the modifier class and globally to all ol's

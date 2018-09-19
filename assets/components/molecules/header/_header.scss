@@ -3,10 +3,14 @@
 // ==========================================================================
 
 .m-header {
-    padding: spacing(40 0);
-    background: palette(grey-light);
+    .wrapper--wide {
+        padding-top: spacing(20);
+        padding-bottom: spacing(20);
+        background: palette(white);
 
-    @include respond-to(medium) {
-    	padding: spacing(60 0);
+        @include respond-to(medium) {
+            padding-top: spacing(25);
+            padding-bottom: spacing(25);
+        }
     }
 }

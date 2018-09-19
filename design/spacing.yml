@@ -20,5 +20,11 @@ props:
     value: 48
     comment: 'quad'
   oct:
+    value: 64
+    comment: 'oct'
+  quint:
     value: 96
-    comment: 'quad'
+    comment: 'quint'
+  max:
+    value: 124
+    comment: 'max'
