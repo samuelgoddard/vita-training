@@ -16,14 +16,14 @@ html {
     line-height: 1.15; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial",
-        sans-serif;
-    // removed for a11y reasons
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    // font-family: "Courier New", Courier, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Sections
+/* Sectionsem
      ========================================================================== */
 
 /**
@@ -130,7 +130,7 @@ strong {
 
 b,
 strong {
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 /**
@@ -168,6 +168,11 @@ mark {
 
 small {
     font-size: 80%;
+}
+
+em {
+    font-family: "HelveticaNeue", Arial, sans-serif;
+    font-weight: 400;
 }
 
 /**
@@ -452,4 +457,9 @@ template {
 
 [hidden] {
     display: none;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+
 }

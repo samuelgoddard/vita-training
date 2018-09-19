@@ -1,0 +1,16 @@
+{#
+    List Atom
+#}
+
+{% if tag %}
+  {% set tag = tag %}
+{% else %}
+  {% set tag = 'ul' %}
+{% endif %}
+<{{ tag }} class="{{ modifier }}">
+    <li>{{ message }}</li>
+    <li>{{ message }}</li>
+    <li>{{ message }}</li>
+    <li>{{ message }}</li>
+</{{ tag }}>
+

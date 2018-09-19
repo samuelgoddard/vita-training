@@ -5,6 +5,7 @@
 // CONFIG + SETTINGS
 // Max-width of the wrapper module regardless of the breakpoint,
 $_wrapper-max-width: 1200;
+$_wrapper-thin-max-width: 900;
 
 // Gutter width of the wrapper to aid legibility on smaller devices.
 $_wrapper-padding: 25;
@@ -19,6 +20,10 @@ $_wrapper-padding: 25;
 
     width: 100%;
     max-width: rem-calc($_wrapper-max-width);
+}
+
+.wrapper--thin {
+    max-width: rem-calc($_wrapper-thin-max-width);
 }
 
 .wrapper--bleed {

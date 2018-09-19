@@ -1,0 +1,469 @@
+{% render '@header' with { heading: "Kind Wireframing Toolkit: Available Components" } %}
+
+<div class="wrapper p-top--triple p-bottom--double">
+
+    {# Blockquote #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Blockqoute</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Blockquote</h5>
+            {% render '@blockquote' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Buttons #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Buttons</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Button: Default</h5>
+            {% render '@btn' %}
+        </div>
+        <div class="p-top--quad">
+            <h5>Button: Primary</h5>
+            {% render '@btn--primary' %}
+        </div>
+        <div class="p-top--quad">
+            <h5>Button: Secondary</h5>
+            {% render '@btn--secondary' %}
+        </div>
+        <div class="p-top--quad">
+            <h5>Button: Small</h5>
+            {% render '@btn--small' %}
+        </div>
+        <div class="p-top--quad">
+            <h5>Button: Block</h5>
+            {% render '@btn--block' %}
+        </div>
+        <div class="p-top--quad">
+            <h5>Button: Naked</h5>
+            {% render '@btn--naked' %}
+        </div>
+        <div class="p-top--quad">
+            <h5>Button: Disabled</h5>
+            {% render '@btn--disabled' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Button Groups #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Button Group</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Button Group</h5>
+            {% render '@btn-group' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Button Group: With Caption</h5>
+            {% render '@btn-group--with-caption' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Burger #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Burger</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Burger</h5>
+            {% render '@burger' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Callout #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Callout</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Callout</h5>
+            {% render '@callout' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Chevron #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Chevrons</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Chevrons</h5>
+            <div>
+                {% render '@chevron' with { modifier: "" } %}
+                {% render '@chevron--right' %}
+                {% render '@chevron--up' %}
+                {% render '@chevron--left' %}
+            </div>
+
+            <h5>Chevrons: Primary</h5>
+            <div>
+                {% render '@chevron' with { modifier: "chevron--primary" } %}
+                {% render '@chevron' with { modifier: "chevron--primary chevron--right" } %}
+                {% render '@chevron' with { modifier: "chevron--primary chevron--up" } %}
+                {% render '@chevron' with { modifier: "chevron--primary chevron--left" } %}
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Chevron #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Cite</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Cite</h5>
+
+            {% render '@cite' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Close #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Close</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Close</h5>
+
+            {% render '@close' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Close: Small</h5>
+
+            {% render '@close--small' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Figure #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Figure</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Figure</h5>
+
+            {% render '@figure' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Figure: With Caption</h5>
+
+            {% render '@figure--with-caption' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Flash Message #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Flash Message</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Flash Message</h5>
+            <div>
+                {% render '@flash-message' %}
+            </div>
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Flash Message: Success</h5>
+            <div>
+                {% render '@flash-message--success' %}
+            </div>
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Flash Message: Warning</h5>
+            <div>
+                {% render '@flash-message--warning' %}
+            </div>
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Flash Message: Danger</h5>
+            <div>
+                {% render '@flash-message--danger' %}
+            </div>
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Headings #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Headings</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            {% render '@headings' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Horizontal Rule #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Horizontal Rule</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Horizontal Rule</h5>
+            {% render '@hr' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Islands #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Islands</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Islands</h5>
+            {% render '@island' %}
+            {% render '@island--primary' %}
+            {% render '@island--secondary' %}
+            {% render '@island--grey' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Lede #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Lede</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Lede</h5>
+            {% render '@lede' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Links #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Link</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Link: Default</h5>
+            {% render '@link' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Link: Primary</h5>
+            {% render '@link--primary' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Link: Secondary</h5>
+            {% render '@link--secondary' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Link: Plain</h5>
+            {% render '@link--plain' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Link: Bold</h5>
+            {% render '@link--bold' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Lists #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Lists</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Lists</h5>
+            {% render '@list' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Lists: Ordered Lists</h5>
+            {% render '@list' with { tag: "ol"} %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Lists: Unstyled</h5>
+            {% render '@list' with { modifier: "list--unstyled"} %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Meta #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Meta</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Meta: Default</h5>
+            {% render '@meta' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Meta: Highlight</h5>
+            {% render '@meta--highlight' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Micro #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Micro</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Micro</h5>
+            {% render '@micro' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Nav Item #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Nav Item</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Nav Item</h5>
+            {% render '@nav-item' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Nav Item: Underlined</h5>
+            {% render '@nav-item--underlined' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Nav Item: Plain</h5>
+            {% render '@nav-item--plain' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Paragraph #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Paragraph</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Paragraph</h5>
+            {% render '@paragraph' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Pill #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Pill</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Pill</h5>
+            {% render '@pill' %}
+        </div>
+
+        <div class="p-top--quad">
+            <h5>Pill: Primary</h5>
+            {% render '@pill--primary' %}
+        </div>
+    </div>
+
+    <hr/>
+
+    {# Table #}
+
+    <div class="p-top--quad p-bottom--quad">
+        <h4>Table</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea porro deleniti beatae cum illum, reprehenderit animi, veritatis recusandae nostrum similique repudiandae, voluptatibus officia a autem officiis amet dicta sed.</p>
+
+        <div class="p-top--quad">
+            <h5>Table</h5>
+            {% render '@table' %}
+        </div>
+    </div>
+
+    <hr/>
+
+</div>
+
+{% render '@footer' with { heading: "Example Footer" } %}

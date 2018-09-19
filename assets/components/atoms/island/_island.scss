@@ -11,4 +11,10 @@
     .island--#{$color} {
         background: $value;
     }
+
+    // Here when an island color is combined with island--bordered we take the color
+    // and darken it, then assign it to a 1px stroke bottom
+    .island--#{$color}.island--bordered {
+        border-bottom: rem-calc(1) solid tint($value, "darken");
+    }
 }

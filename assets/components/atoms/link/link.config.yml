@@ -2,31 +2,31 @@ title: "Links"
 status: "ready"
 
 context:
-  link:
-    message: This is a standard link item
+  message: This is a standard link item
 
 variants:
   -
-    name: plain
+    name: primary
     context:
-      link:
-        modifier: link--plain
-        message: This is a plain link item
-  -
-    name: black
-    context:
-      link:
-        modifier: link--black
-        message: This is a black link item
+      modifier: link--primary
+      message: This is a primary link item
   -
     name: secondary
     context:
-      link:
-        modifier: link--secondary
-        message: This is a secondary link item
+      modifier: link--secondary
+      message: This is a secondary link item
+  -
+    name: plain
+    context:
+      modifier: link--plain
+      message: This is a plain link item
+  -
+    name: bold
+    context:
+      modifier: link--bold
+      message: This is a bold link item
   -
     name: block
     context:
-      link:
-        modifier: link--block
-        message: This is a display block link item
+      modifier: link--block
+      message: This is a display block link item

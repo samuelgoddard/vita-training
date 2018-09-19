@@ -1,0 +1,62 @@
+// ==========================================================================
+// Teaser Molecule
+// ==========================================================================
+
+.m-teaser {
+    display: block;
+}
+
+.m-teaser__title {
+    width: 100%;
+    font-size: ms(2);
+    line-height: 1.22;
+    margin-top: spacing(5);
+    display: block;
+    font-weight: bold;
+
+    @include link() {
+        color: palette(black);
+        text-decoration: none;
+    }
+
+    @include respond-to(medium) {
+        font-size: ms(3)
+    }
+}
+
+.m-teaser__meta {
+    display: flex;
+    align-items: center;
+}
+
+.m-teaser__days {
+    margin-left: auto;
+}
+
+
+// Inline modifer, text and image sit in columns rather than stacked
+.m-teaser--inline {
+    display: block;
+
+    .m-teaser__inner {
+        box-sizing: border-box;
+        flex: 0 0 auto;
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    .m-teaser__title {
+        @include respond-to(medium) {
+            font-size: ms(1);
+        }
+    }
+
+    @include respond-to(large) {
+        display: flex;
+
+        .img {
+            padding-right: spacing(15);
+        }
+    }
+}

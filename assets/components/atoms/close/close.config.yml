@@ -1,9 +1,8 @@
-title: "Callout"
+title: "Close"
 status: "ready"
 
 variants:
   -
     name: small
     context:
-      close:
-        modifier: close--small
+      modifier: close--small

@@ -1,0 +1,9 @@
+{% if not modifier %}
+  {% set modifier = '' %}
+{% endif %}
+
+{% for i in range(1,4) %}
+    {% set id = modifier ~ '-' ~ loop.index %}
+    <input type="radio" name="radio-{{ modifier }}" class="radio {{ modifier }}" value="radio" id="radio-{{ id }}">
+    <label for="radio-{{ id }}" class="label">Radio button example</label>
+{% endfor %}

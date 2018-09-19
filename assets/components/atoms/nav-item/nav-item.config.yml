@@ -1,0 +1,17 @@
+title: "Nav Item"
+status: "ready"
+
+context:
+  message: This is an example nav item
+
+variants:
+  -
+    name: underlined
+    context:
+      message: This is an example underlined nav item
+      modifier: nav-item--underlined
+  -
+    name: plain
+    context:
+      message: This is an example plain nav item
+      modifier: nav-item--plain

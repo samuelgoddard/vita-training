@@ -1,0 +1,46 @@
+<!-- NoPad and dark preview context  -->
+{%- set noPad = false -%}
+{%- set dark = false -%}
+
+{% if _target.context.preview is defined %}
+  {% if _target.context.preview.dark is defined %}
+    {% set dark = true %}
+  {% endif %}
+  {% if _target.context.preview.noPad is defined %}
+    {% set noPad = true %}
+  {% endif %}
+{% endif %}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Preview Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link media="all" rel="stylesheet" href="{{ '/styles/main.css' | path }}">
+
+    <!-- Inline styling for Preview context logic at the top of this file -->
+
+    <style>
+      body {
+        {% if dark %}
+          background: black;
+        {% else %}
+          background: white;
+        {% endif %}
+        {% if not noPad %}
+          margin: 25px;
+        {% endif %}
+      }
+    </style>
+  </head>
+
+  <!-- contenteditable so we can easily mess with content within Fractal -->
+  <body class="js" contenteditable="contenteditable">
+    {{ yield }}
+  </body>
+
+  <script src="{{ '/assets/js/main.js' | path }}"></script>
+</html>

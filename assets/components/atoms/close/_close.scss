@@ -30,12 +30,6 @@
     transform: rotate(-45deg);
 }
 
-.close:hover {
-    &:before, &:after {
-        background-color: palette(primary);
-    }
-}
-
 // Small modifier halves the size of the close icon
 .close--small {
     width: rem-calc(25);
@@ -50,4 +44,8 @@
     height: rem-calc(16);
     width: rem-calc(2);
     background-color: palette(black);
+}
+
+.close--white:before, .close--white:after {
+    background-color: palette(white);
 }

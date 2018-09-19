@@ -1,0 +1,36 @@
+// ==========================================================================
+// Select Form Atom
+// ==========================================================================
+
+.select {
+    @include input-base;
+    background: white;
+
+    &:focus {
+        // border-color: palette(primary);
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+// The wrapping class for the select
+.select__wrapper {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+}
+
+// The dropdown chevron to indicate that this has more content
+.select__icon {
+    @include chevron;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    right: rem-calc(20);
+    top: rem-calc(20);
+}

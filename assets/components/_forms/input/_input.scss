@@ -1,0 +1,58 @@
+// ==========================================================================
+// Input Form Atom
+// ==========================================================================
+
+// Create the base input
+@mixin input-base() {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: ms(-1);
+    width: 100%;
+    display: block;
+    border: 1px solid palette(black);
+    background: white;
+    padding: spacing(10 15);
+}
+
+.input {
+    @include input-base;
+
+    @include placeholder {
+        color: tint(palette(black), "lighten", 5);
+    }
+
+    &:active,
+    &:focus {
+        // border-color: palette(primary);
+    }
+
+    // Input with an error state
+    &.has--error {
+        // border-color: palette(error);
+        // color: palette(error);
+    }
+
+    // Input with a success state
+    &.has--success {
+        // border-color: palette(success);
+        // color: palette(success);
+    }
+
+    // Input with a warning state
+    &.has--warning {
+        // border-color: palette(warning);
+        // color: palette(warning);
+    }
+}
+
+// Increase font-size for password inputs as it looks tiny
+.input[type="password"] {
+    font-size: ms(2);
+    padding: spacing(8 15);
+
+    @include placeholder {
+        display: none;
+    }
+}

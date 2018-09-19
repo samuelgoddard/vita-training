@@ -3,9 +3,8 @@
 // ==========================================================================
 
 .logo {
-    fill: white;
-
-    @include link-hover() {
-        opacity: 0.85;
-    }
+	text-align: center;
+    display: inline-block;
+    width: rem-calc(65);
+    margin: 0 auto;
 }

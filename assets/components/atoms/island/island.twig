@@ -1,0 +1,18 @@
+{#
+    Island Atom
+#}
+
+<div class="island {{ modifier }}{% if inverse %} u-inverse{% endif %} {% if padding %}{{ padding }}{% endif %}">
+    {% if innerWrap is defined %}
+    <div class="wrapper">
+    {% endif %}
+    <h3>{{ title }}</h3>
+
+    {% if message is defined %}
+        {% render '@paragraph' with { message: message} %}
+    {% endif %}
+
+    {% if innerWrap is defined %}
+    </div>
+    {% endif %}
+</div>

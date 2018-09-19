@@ -2,5 +2,11 @@ title: "Pill"
 status: "ready"
 
 context:
-  pill:
-    message: Pill Example
+  message: Pill Example
+
+variants:
+  -
+    name: primary
+    context:
+      modifier: pill--primary
+      message: Primary Pill

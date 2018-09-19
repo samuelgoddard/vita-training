@@ -2,13 +2,11 @@ title: "Burger"
 status: "ready"
 
 context:
-  burger:
-    message: Menu
+  message: Menu
 
 variants:
   -
     name: active
     context:
-      burger:
-        message: Close
-        modifier: is--active
+      message: Close
+      modifier: is--active

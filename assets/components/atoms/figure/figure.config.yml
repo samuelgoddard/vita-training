@@ -1,2 +1,9 @@
 title: "Figure"
 status: "ready"
+
+variants:
+  -
+    name: with-caption
+    context:
+      modifier: figure--with-caption
+      message: Example Caption

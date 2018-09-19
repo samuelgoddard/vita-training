@@ -1,0 +1,25 @@
+{#
+    Teaser Molecule
+
+    @required type name description
+#}
+
+<div class="m-teaser {{ modifier }}">
+    <div class="m-teaser__inner">
+        <a href="#">
+            {% render '@image' with { src: image } %}
+        </a>
+    </div>
+
+    <div class="m-teaser__inner p-top">
+        <div class="m-teaser__meta">
+            {% render '@pill' with { message: 'Teaser Example' } %}
+        </div>
+
+        <a href="#" class="m-teaser__title">{{ title }}</a>
+
+        {% if description %}
+            <p class="micro p-top">{{ description }}</p>
+        {% endif %}
+    </div>
+</div>

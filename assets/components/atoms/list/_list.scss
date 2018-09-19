@@ -4,19 +4,19 @@
 
 // The base list styles
 %list-base {
-    margin: 0 0 1em 0;
-    list-style: none;
+    margin: spacing(0 0 25 25);
+    // list-style: none;
     line-height: 1.44;
     font-size: ms(0);
     padding-left: 0;
+    list-style-type: square;
+
+    @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+    }
 
     li {
-        margin-bottom: spacing(5);
-        font-size: ms(0);
-
-        @include respond-to(medium) {
-            font-size: ms(0, $thread: desktop);
-        }
+        margin-bottom: 0.5em;
     }
 }
 
@@ -26,46 +26,19 @@
     list-style-position: outside;
 
     li {
-        margin-bottom: spacing(10);
-        padding-left: rem-calc(15);
+        padding-left: rem-calc(5);
         position: relative;
-
-        // Create and position the bullet from the before psuedo element
-        &:before {
-            position: absolute;
-            top: rem-calc(10);
-            left: 0;
-            display: block;
-            margin-bottom: rem-calc(4);
-            margin-right: rem-calc(8);
-            content: " ";
-            width: 4px;
-            height: 4px;
-            border-radius: 100%;
-            background-color: palette(black);
-        }
     }
 }
 
 @mixin list--numbered {
     @extend %list-base;
     counter-reset: list;
+    list-style-type: decimal;
 
     li {
         padding-left: rem-calc(15);
         position: relative;
-
-        // Create and position the counter from the before psuedo element
-        &:before {
-            position: absolute;
-            top: rem-calc(4);
-            left: 0;
-            counter-increment: list;
-            content: counters(list, ".") ".";
-            color: palette(black);
-            margin-right: rem-calc(12);
-            font-size: ms(-1);
-        }
     }
 
     ol {
@@ -78,17 +51,18 @@ ul {
     @include list--bullet;
 }
 
-.list--unstyled {
-    li {
-        padding-left: 0;
-        &:before,
-        &:after {
-            display: none;
-        }
-    }
-}
-
 // Declare the numbered list styling on both the modifier class and globally to all ol's
 ol {
     @include list--numbered;
+}
+
+.list--unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+
+    li {
+        padding-left: 0;
+        margin-left: none;
+    }
 }

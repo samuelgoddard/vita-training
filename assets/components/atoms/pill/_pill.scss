@@ -3,13 +3,29 @@
 // ==========================================================================
 
 .pill {
-    display: inline-block;
-    background: palette(primary);
-    color: white;
-    border-radius: rem-calc(3);
+    padding: spacing(2 8);
+    line-height: 1.88;
+    letter-spacing: 0.25px;
     text-transform: uppercase;
-    font-size: ms(-1);
     font-weight: bold;
-    padding: spacing(6 9);
-    margin-bottom: spacing(5);
+    // font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+    margin: spacing(0 6 0 0);
+
+    @include link() {
+        font-size: rem-calc(12);
+        background: palette(black);
+        color: palette(white);
+        display: inline-block;
+        text-decoration: none;
+        transition: all ease 150ms;
+    }
+
+    @include link-hover {
+    }
+}
+
+.pill--primary {
+    @include link() {
+        background: palette(primary);
+    }
 }

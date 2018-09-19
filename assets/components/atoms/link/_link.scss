@@ -1,23 +1,27 @@
 // ==========================================================================
 // Links Atom
 // ==========================================================================
-a,
 .link {
-    // Set nice text-decoration
-    text-decoration: underline;
-    text-decoration-skip: ink;
+    // Size swapped to desktop thread at medium +
+    @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+    }
 
     // Default link uses the primary palette
     @include link() {
-        color: palette(primary);
+        text-decoration: none;
+        color: palette(black);
+        transition: all ease 250ms;
+        padding-bottom: spacing(3);
+        border-bottom: 1px solid palette(grey);
     }
 
     @include link-hover() {
-        color: tint(palette(primary), "darken");
+        border-bottom: 1px solid palette(black);
     }
 
     &:focus {
-        outline: 1px dotted palette("secondary");
+        outline: 1px dotted palette(grey-mid);
     }
 
     &:active {
@@ -25,28 +29,50 @@ a,
     }
 }
 
+// Add primary styling for a 'primary' modifier
+.link--primary {
+    @include link() {
+        border-bottom: 1px solid rgba(palette(primary), 0.2);
+        color: palette(primary);
+    }
+    @include link-hover() {
+        border-bottom: 1px solid palette(primary);
+        color: palette(primary);
+    }
+}
+
+// Add secondary styling for a 'primary' modifier
+.link--secondary {
+    @include link() {
+        border-bottom: 1px solid rgba(palette(secondary), 0.2);
+        color: palette(secondary);
+    }
+    @include link-hover() {
+        border-bottom: 1px solid palette(secondary);
+        color: palette(secondary);
+    }
+}
+
 // Remove all styling for a 'plain' modifier
 .link--plain {
-    text-decoration: none;
-    text-decoration-skip: none;
-
+    @include link() {
+        border-bottom: none;
+    }
     @include link-hover() {
+        border-bottom: none;
+        text-decoration: none;
+        text-decoration-skip: none;
         color: currentColor;
+    }
+}
+
+.link--bold {
+    @include link() {
+        font-weight: 700;
     }
 }
 
 // Block display modifier
 .link--block {
     display: block;
-}
-
-// Secondary palette coloured link modifier
-.link--secondary {
-    @include link() {
-        color: palette(secondary);
-    }
-
-    @include link-hover() {
-        color: tint(palette(secondary), "darken");
-    }
 }

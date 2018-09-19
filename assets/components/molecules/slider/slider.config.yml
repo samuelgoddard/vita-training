@@ -1,0 +1,20 @@
+title: "Slider"
+status: "wip"
+
+context:
+  slides:
+    -
+      image: https://picsum.photos/900/500
+      caption: Slide One
+    -
+      image: https://picsum.photos/900/500
+      caption: Slide Two
+    -
+      image: https://picsum.photos/900/500
+      caption: Slide Three
+    -
+      image: https://picsum.photos/900/500
+      caption: Slide Four
+    -
+      image: https://picsum.photos/900/500
+      caption: Slide Five

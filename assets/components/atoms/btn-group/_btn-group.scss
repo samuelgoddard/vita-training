@@ -1,13 +1,14 @@
 // ==========================================================================
-// Button Atom
+// Button Group Atom
 // ==========================================================================
 
-// Base btn styling
+// Base btn group styling
 .btn-group {
     position: relative;
     margin-right: spacing(-10);
     margin-bottom: spacing(-10);
 
+    // Style buttons within the group accordingly
     > .btn {
         margin-right: spacing(5);
         margin-bottom: spacing(10);

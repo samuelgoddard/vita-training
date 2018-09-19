@@ -1,0 +1,22 @@
+title: "Teaser"
+status: "wip"
+
+context:
+  image: https://picsum.photos/900/500
+  title: "An Example of a Standard Teaser With a Relatively Long Title"
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate
+
+variants:
+  -
+    name: inline
+    context:
+      image: https://picsum.photos/900/350
+      title: "An Example of an Inline Teaser With a Short Title"
+      description: >-
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      modifier: m-teaser--inline

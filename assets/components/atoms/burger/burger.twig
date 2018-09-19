@@ -1,0 +1,10 @@
+{#
+    Burger Atom
+#}
+
+<button class="burger {{ modifier }}" data-toggle="#mobile-menu">
+    <div class="burger__icon"></div>
+    {% if message %}
+        <div class="burger__text">{{ message }}</div>
+    {% endif %}
+</button>

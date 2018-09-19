@@ -2,7 +2,12 @@ title: "Button group"
 status: "ready"
 
 context:
-  btnGroup:
+  name: default
+  caption: Nothing
 
-  btn:
-    message: Default Button
+variants:
+  -
+    name: with-caption
+    context:
+      modifier: with-caption
+      caption: "Caption Note: This is a nice caption example"

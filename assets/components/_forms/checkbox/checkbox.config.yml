@@ -1,0 +1,7 @@
+title: "Checkbox"
+status: ready
+
+context:
+  checkbox:
+    label: A Checkbox Label
+    checked: true

@@ -4,14 +4,14 @@ status: "ready"
 context:
   headings:
     -
-      message: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+      message: H1 Heading Styles
       tag: h1
     -
-      message: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+      message: H2 Heading Styles
       tag: h2
     -
-      message: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+      message: H3 Heading Styles
       tag: h3
     -
-      message: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+      message: H4 Heading Styles
       tag: h4

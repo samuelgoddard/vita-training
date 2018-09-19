@@ -1,0 +1,55 @@
+// ==========================================================================
+// Checkbox Form Atom
+// ==========================================================================
+
+.checkbox {
+    // Remove the default checkbox with position hack
+    position: absolute;
+    left: -999em;
+
+    & + label {
+        display: block;
+        padding-left: spacing(25);
+        text-align: left;
+        position: relative;
+        padding-top: spacing(3);
+
+        &:before {
+            display: inline-block;
+            width: rem-calc(15);
+            height: rem-calc(14);
+            content: "";
+            margin-right: 10px;
+            margin-top: rem-calc(3);
+            vertical-align: text-top;
+            background: white;
+            border: 1px solid palette(black);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    // The tick within the checkbox that's only active when checked
+    &:checked + label:after {
+        content: "";
+        position: absolute;
+        left: rem-calc(4);
+        top: rem-calc(10);
+        background: palette(black);
+        width: 2px;
+        height: 2px;
+        box-shadow: 1px 0 0 palette(black), 3px 0 0 palette(black),
+            3px -1px 0 palette(black), 3px -3px 0 palette(black),
+            3px -5px 0 palette(black), 3px -6px 0 palette(black);
+        transform: rotate(45deg);
+    }
+
+    &:focus + label {
+        color: palette(black);
+    }
+}

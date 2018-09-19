@@ -2,21 +2,19 @@ title: "Lists"
 status: "ready"
 
 context:
-  list:
     message: This is a standard list item
+    modifier: list
 
 variants:
-
   -
     name: Numbered List
     context:
-      list:
-        tag: ol
-        message: This is a numbered list item
+      tag: ol
+      message: This is a numbered list item
+      modifier: list
   -
     name: Unstyled List
     context:
-      list:
-        tag: ul
-        modifier: list--unstyled
-        message: This is an unstyled list item
+      tag: ul
+      modifier: list--unstyled
+      message: This is an unstyled list item

@@ -1,0 +1,10 @@
+title: "Checkbox"
+status: ready
+context:
+    input:
+        message: Placeholder text
+variants:
+    -
+        name: inline
+        context:
+            modifier: radio--inline

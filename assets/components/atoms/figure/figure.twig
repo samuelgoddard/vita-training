@@ -1,0 +1,13 @@
+{#
+    Figure Atom
+#}
+
+<figure>
+    <img
+    src="http://via.placeholder.com/420x420"
+    alt="A nice picture">
+
+    {% if modifier == "figure--with-caption" %}
+        {% render '@figcaption' %}
+    {% endif %}
+</figure>

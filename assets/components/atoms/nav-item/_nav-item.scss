@@ -1,0 +1,63 @@
+// ==========================================================================
+// Nav Item Atom
+// ==========================================================================
+
+.nav-item {
+    display: inline-block;
+
+    @include link() {
+        font-size: ms(0);
+        // font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+        line-height: 1.44;
+        color: palette(black);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-decoration-skip-ink: auto;
+        padding-bottom: spacing(3);
+        border-bottom: 1px solid transparent;
+        transition: all ease 250ms;
+    }
+
+    @include link-hover() {
+        border-bottom: 1px solid palette(black);
+    }
+
+    &:focus {
+        outline: 1px dotted palette(grey-mid);
+    }
+
+    &:active {
+        outline: none;
+    }
+}
+
+// By default nav items don't have any text-decoration, this modifier adds it
+.nav-item--underlined {
+    // Default link uses the primary palette
+    @include link() {
+        text-decoration: none;
+        color: palette(black);
+        border-bottom: 1px solid palette(grey);
+    }
+
+    @include link-hover() {
+        border-bottom: 1px solid palette(black);
+    }
+}
+
+.nav-item--plain {
+    // Default link uses the primary palette
+    @include link() {
+        text-decoration: none;
+        border-bottom: none;
+        color: palette(black);
+        text-transform: capitalize;
+    }
+}
+
+.nav-item--large {
+    @include link() {
+        font-size: ms(6);
+    }
+}

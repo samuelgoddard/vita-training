@@ -1,0 +1,77 @@
+// ==========================================================================
+// Radio Form Atom
+// ==========================================================================
+
+.radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+
+    & + label {
+        position: relative;
+        padding-left: rem-calc(23);
+        margin-top: rem-calc(8);
+        font-weight: normal;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        &:before {
+            opacity: 0;
+            left: rem-calc(4);
+            top: rem-calc(4);
+            width: rem-calc(10);
+            height: rem-calc(10);
+            background-color: white;
+            z-index: 1;
+        }
+
+        &:after {
+            left: 0;
+            top: 0;
+            width: rem-calc(16);
+            height: rem-calc(16);
+            background-color: white;
+            border: 1px solid palette(grey);
+        }
+    }
+
+    &:checked + label {
+        color: palette(primary);
+
+        &:before {
+            opacity: 1;
+        }
+
+        &:after {
+            background-color: palette(primary);
+            border: 1px solid palette(primary);
+        }
+    }
+
+    &:focus + label {
+        &:after {
+            background-color: palette(primary);
+            border: 1px solid palette(primary);
+        }
+    }
+}
+
+.radio--inline {
+    display: inline-block;
+
+    & + label {
+        display: inline-block;
+        margin-right: rem-calc(15);
+        margin-top: rem-calc(0);
+    }
+}

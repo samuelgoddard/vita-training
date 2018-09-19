@@ -2,20 +2,14 @@
 // Lede Atom
 // ==========================================================================
 
-.lede {
-    // Apply font styling to all elements within the callout
-    &, > p {
-        font-size: ms(0);
-        font-weight: 500;
+.lede,
+.lede > p {
+    // Mobile we match the font size so it's not overwhelming but leave the bold
+    font-size: ms(1);
+    line-height: 1.66;
 
-        @include respond-to(medium) {
-            font-size: ms(1, $thread: desktop);
-        }
-    }
-
-    // Trim the top spacing of the first child
-    > *:first-child {
-        margin-top: 0;
-        padding-top: 0;
+    // Medium + we go to the standard lede size
+    @include respond-to(medium) {
+        font-size: ms(1, $thread: desktop);
     }
 }

@@ -1,0 +1,19 @@
+{#
+    Slider Molecule
+
+    @todo - integrate base JS for this
+    @required type name description
+#}
+
+<div class="m-slider">
+    <div class="wrapper">
+        <div class="g align-v-center js--m-slider">
+            {% for slide in slides %}
+                <div class="g__col g__col-auto m-slider__item">
+                    <img class="m-slider__img" src="{{ slide.image }}" alt="Slide Image" />
+                    <span class="m-slider__caption">{{ slide.caption }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

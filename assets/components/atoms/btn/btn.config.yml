@@ -2,31 +2,37 @@ title: "Buttons"
 status: "ready"
 
 context:
-  btn:
-    message: Default Button
+  message: Default Button
+  url: '#'
 
 variants:
   -
     name: primary
     context:
-      btn:
-        modifier: btn--primary
-        message: Button Primary
+      modifier: btn--primary
+      message: Primary Button
   -
-    name: naked
+    name: secondary
     context:
-      btn:
-        modifier: btn--naked
-        message: Naked Button
+      modifier: btn--secondary
+      message: Secondary Button
   -
     name: small
     context:
-      btn:
-        modifier: btn--small
-        message: Small Button
+      modifier: btn--small
+      message: Small Button
+  -
+    name: naked
+    context:
+      modifier: btn--naked
+      message: Naked Button
   -
     name: block
     context:
-      btn:
-        modifier: btn--block
-        message: Block Display Button
+      modifier: btn--block
+      message: Block Display Button
+  -
+    name: disabled
+    context:
+      modifier: is--disabled
+      message: Disabled Button

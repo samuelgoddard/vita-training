@@ -1,0 +1,13 @@
+{#
+    Button Group Atom
+#}
+
+<div class="btn-group {{ modifier }}">
+  {% render '@btn--primary' %}
+  {% render '@btn' %}
+  {% render '@btn' %}
+
+  {% if modifier == 'with-caption' %}
+    <p class="micro">{{ caption }}</p>
+  {% endif %}
+</div>

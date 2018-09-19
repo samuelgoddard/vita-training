@@ -2,13 +2,11 @@ title: "Meta"
 status: "ready"
 
 context:
-  meta:
-    message: Meta
+  message: Meta Text
 
 variants:
   -
     name: highlight
     context:
-      meta:
-        message: Meta Highlight
-        modifier: meta--highlight
+      message: Meta Text (Highlight)
+      modifier: meta--highlight
