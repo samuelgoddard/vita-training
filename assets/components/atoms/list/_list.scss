@@ -58,14 +58,11 @@ ul {
 
     li {
         &:before {
-            border-right: 2px solid palette(primary);
-            border-bottom: 2px solid palette(primary);
-            width: rem-calc(4);
-            height: rem-calc(4);
-            transform: rotate(-45deg);
-            content: "";
+            content: "▶";
             display: inline-block;
             margin-right: spacing(10);
+            font-size: rem-calc(10);
+            color: palette(primary);
         }
     }
 }

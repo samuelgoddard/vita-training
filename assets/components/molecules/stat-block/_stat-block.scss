@@ -8,6 +8,11 @@
     padding: spacing(20);
     overflow: hidden;
     height: 100%;
+    display: block;
+
+    @include link() {
+        text-decoration: none;
+    }
 
     @include respond-to(medium) {
         padding: spacing(30);
@@ -15,6 +20,36 @@
 
     @include respond-to(large) {
         min-height: rem-calc(250);
+    }
+}
+
+a.m-stat-block {
+    @include link() {
+        padding: spacing(30 75 30 30);
+        &:after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: rem-calc(50);
+            height: rem-calc(50);
+            background: white;
+            z-index: 0;
+            content: "▶";
+            color: palette(secondary);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            justify-content: center;
+            font-size: rem-calc(13);
+            transition: all ease 250ms;
+        }
+    }
+
+    @include link-hover() {
+        &:after {
+            opacity: 0.4;
+        }
     }
 }
 

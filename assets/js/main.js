@@ -8,8 +8,6 @@ const init = () => {
     document.documentElement.classList.remove('js-loading');
     document.documentElement.classList.add('js-loaded');
 
-    svg4everybody();
-
     APP.widgets = {
       smoothScrollInternalLinks: smoothScrollInternalLinks(),
     };

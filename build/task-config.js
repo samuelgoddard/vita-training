@@ -83,12 +83,12 @@ module.exports = {
 
   // Options to pass to Browsersync.
   browserSync: {
-    server: {
-      // should match `dest` in
-      // path-config.json
-      baseDir: 'public'
-    },
-    // proxy: "http://localhost:4001",
+    // server: {
+    //   // should match `dest` in
+    //   // path-config.json
+    //   baseDir: 'public'
+    // },
+    proxy: "http://localhost:4000",
     files: ["design/*.yml", "public/*.html"],
   },
   // Specify additional environment specific configuration to be merged in with Blendid's defaults
