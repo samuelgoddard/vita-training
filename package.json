@@ -10,9 +10,6 @@
     "build": "cross-env NODE_ENV=production BLENDID_CONFIG_PATH=./build yarn run blendid build",
     "generate-styleguide": "yarn build && fractal build"
   },
-  "engines": {
-    "node": "~8.9.3"
-  },
   "dependencies": {
     "breakpoint-sass": "^2.7.1",
     "enquire.js": "^2.1.6",
