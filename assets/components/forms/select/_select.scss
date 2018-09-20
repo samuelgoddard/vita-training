@@ -4,10 +4,11 @@
 
 .select {
     @include input-base;
-    background: white;
+    background: #eeeff0;
+    border-color: #eeeff0;
 
     &:focus {
-        // border-color: palette(primary);
+        border-color: palette(grey-mid);
     }
 
     &::-ms-expand {
@@ -27,10 +28,10 @@
 
 // The dropdown chevron to indicate that this has more content
 .select__icon {
-    @include chevron;
     pointer-events: none;
     position: absolute;
     z-index: 1;
     right: rem-calc(20);
-    top: rem-calc(20);
+    top: rem-calc(22);
+    font-size: rem-calc(8);
 }

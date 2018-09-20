@@ -26,7 +26,7 @@ props:
     value: '#CC0F29'
     comment: 'Primary: (Bright Red)'
   secondary:
-    value: '#800717'
+    value: '#781315'
     comment: 'Secondary: (Deep Red)'
   tertiary:
     value: '#f68f1e'

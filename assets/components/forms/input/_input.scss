@@ -8,12 +8,16 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: ms(-1);
+    font-size: ms(0);
     width: 100%;
     display: block;
-    border: 1px solid palette(black);
+    border: 1px solid tint(palette(grey), 'darken');
+    border-radius: rem-calc(3);
     background: white;
-    padding: spacing(10 15);
+    padding: spacing(15 15);
+    margin-bottom: spacing(15);
+    font-family: 'Cabin', sans-serif;
+    color: palette(black);
 }
 
 .input {
@@ -25,7 +29,7 @@
 
     &:active,
     &:focus {
-        // border-color: palette(primary);
+        border-color: palette(black);
     }
 
     // Input with an error state
@@ -45,6 +49,10 @@
         // border-color: palette(warning);
         // color: palette(warning);
     }
+}
+
+.input--no-pad {
+    margin-bottom: 0;
 }
 
 // Increase font-size for password inputs as it looks tiny

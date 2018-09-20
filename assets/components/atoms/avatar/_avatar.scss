@@ -1,0 +1,14 @@
+// ==========================================================================
+// Avatar Atom
+// ==========================================================================
+
+.avatar {
+    border-radius: 100%;
+    border: rem-calc(3) solid palette(white);
+    max-width: rem-calc(50);
+    margin-bottom: spacing(base);
+
+    @include respond-to(large) {
+        max-width: rem-calc(65);
+    }
+}

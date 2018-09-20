@@ -72,6 +72,20 @@
     }
 }
 
+// Btn Grey
+.btn--grey {
+    @include link() {
+        border-color: palette(grey);
+        background: palette(grey);
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        border-color: tint(palette(grey), 'darken');
+        background: tint(palette(grey), 'darken');
+    }
+}
+
 
 // Naked btn share the same spacing params as btn however dont have a background color,
 // can be used for example to place a link inline next to a button to give the effect
@@ -114,5 +128,17 @@
 
     @include link-hover() {
         cursor: not-allowed;
+    }
+}
+
+.btn--shrink {
+    @include link() {
+        min-width: rem-calc(45);
+        padding: spacing(10 10 10 10);
+
+        @include respond-to(medium) {
+            min-width: rem-calc(60);
+            padding: spacing(14 20 12 20);
+        }
     }
 }

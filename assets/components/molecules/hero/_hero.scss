@@ -3,9 +3,14 @@
 // ==========================================================================
 
 .m-hero {
-    background: palette(secondary);
+    background-image: url('../images/hero-mobile.jpg');
+    background-size: cover;
+    background-position: center center;
     position: relative;
 
+    @include respond-to(medium) {
+        background-image: url('../images/hero.jpg');
+    }
 }
 
 .m-hero__heading {

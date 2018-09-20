@@ -9,7 +9,8 @@
     </section>
 
     {# About #}
-    <section style="background-image: url('images/background1.jpg');" class="island--cover p-top--max@xlarge p-bottom--max@xlarge" id="about">
+    <section class="island--cover island--secondary p-top--max@xlarge p-bottom--max@xlarge" id="about">
+        <div class="island--inner-image" style="background-image: url('images/background1.jpg');"></div>
         <div class="wrapper island">
             <div class="wrapper wrapper--thin">
 
@@ -93,7 +94,64 @@
                         <h3 class="h--underlined">Request a booking</h3>
 
                         <div class="p-top--double">
-                            <p>@todo Form here</p>
+                            {# @todo Form here #}
+
+                            <form action="#" method="post">
+                                <div class="g">
+                                    <div class="g__col g__col-12 g__col-6@medium">
+                                        <input class="input" type="text" id="name" name="name" placeholder="Name">
+                                        <input class="input" type="text" id="organisation" name="organisation" placeholder="Organisation">
+
+                                        <div class="select__wrapper">
+                                            <select class="select">
+                                                <option value="1">Preferred training package</option>
+                                                <option value="2">Option 1</option>
+                                                <option value="3">Option 2</option>
+                                                <option value="4">Option 4</option>
+                                            </select>
+
+                                            <span class="select__icon">▼</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="g__col g__col-12 g__col-6@medium">
+                                        <input class="input" type="email" id="mail" name="email" placeholder="Email Address">
+
+                                        <input class="input" type="text" id="postcode" name="postcode" placeholder="Postcode">
+
+                                        <div class="select__wrapper">
+                                            <select class="select">
+                                                <option value="1">Number of trainees</option>
+                                                <option value="2">1-5</option>
+                                                <option value="3">5-10</option>
+                                                <option value="4">10-20</option>
+                                                <option value="5">20-30</option>
+                                                <option value="6">30+</option>
+                                            </select>
+
+                                            <span class="select__icon">▼</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-top">
+                                    <div class="u-trim">
+                                        <p class="lede p-bottom--half"><strong>Preferred training dates</strong></p>
+                                    </div>
+
+                                    <textarea class="input input--no-pad" name="textarea" rows="10">Let us know what dates work for you</textarea>
+
+                                    <p class="micro p-top--half">Enter specific dates or even just a preferred month</p>
+                                </div>
+
+                                <div class="p-top">
+                                    <a href="#" class="btn btn--primary">Send request</a>
+
+                                    <div class="u-trim p-top--half">
+                                        <p class="micro">We aim to respond within 2 working days</p>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -108,33 +166,42 @@
 
             <div class="g p-top--double p-top--quad@medium">
                 <div class="g__col g__col-12 g__col-4@large">
+
+                    <img class="avatar" src="images/rosie.jpg" alt="Dr Rosie Riley" />
+
                     <h4>Dr Rosie Riley BSc MBChB</h4>
 
                     <p class="lede">Founder, CEO and Trainer of VITA Training. NHS England Clinical Entrepreneur. Junior Clinical Fellow in Emergency Medicine</p>
 
                     <p>Rosie works as doctor at a teaching hospital in London. She graduated with a medical degree and a BSc in Global Health from the University of Bristol. During 3rd year, she developed VITA Training and delivered it initially in a GP setting. Her results have been included in a Department of Health-commissioned systematic review and she has advised development of national multi-agency training materials on trafficking for NHS England in 2016. She is now a Clinical Entrepreneur for NHS England.</p>
 
-                    <a href="#" target="_blank" class="link link--primary link--bold">Connect on Linkedin</a>
+                    <a href="#" target="_blank" class="link link--primary link--bold"><span class="micro">▶</span> Connect on Linkedin</a>
                 </div>
 
                 <div class="g__col g__col-12 g__col-4@large p-top--quad p-top--reset@large">
+
+                    <img class="avatar" src="images/tony.jpg" alt="Dr Rosie Riley" />
+
                     <h4>Dr Toby Bonvoisin MBChB</h4>
 
                     <p class="lede">Co-Founder of VITA Training and Trainer</p>
 
                     <p>z faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis.</p>
 
-                    <a href="#" target="_blank" class="link link--primary link--bold">Connect on Linkedin</a>
+                    <a href="#" target="_blank" class="link link--primary link--bold"><span class="micro">▶</span> Connect on Linkedin</a>
                 </div>
 
                 <div class="g__col g__col-12 g__col-4@large p-top--quad p-top--reset@large">
+
+                    <img class="avatar" src="images/rosie.jpg" alt="Dr Rosie Riley" />
+
                     <h4>Dr Lucy Willians BSc MBChB</h4>
 
                     <p class="lede">Trainer and content-creator for e-learning</p>
 
                     <p>Lucy works as a doctor at a teaching hospital in London. She graduated with a medical degree and a BSc in Global Health from the University of Bristol, where she wrote a thesis on human trafficking. She has also written a featured article for Student BMJ about training for medical students and advocates for inclusion of this subject in undergraduate training. She is instrumental in delivering the e-learning modules for VITA Training.</p>
 
-                    <a href="#" target="_blank" class="link link--primary link--bold">Connect on Linkedin</a>
+                    <a href="#" target="_blank" class="link link--primary link--bold"><span class="micro">▶</span> Connect on Linkedin</a>
                 </div>
             </div>
         </div>
@@ -174,8 +241,28 @@
             </div>
         </div>
 
-        <div class="wrapper wrapper--thin p-top--double p-top--quad@medium">
-            <h4>@todo images here</h4>
+        <div class="wrapper wrapper--thin p-top--quad p-top--quint@medium">
+            <div class="g align-center align-v-center">
+                <div class="g__col g__col-12 g__col-5@medium u-text-center">
+                    <div class="g align-v-center@xlarge">
+                        <div class="g__col g__col-3">
+                            <img src="images/rcgp-logo.jpg" alt="RGCP Logo" style="max-width: 100px; width: 100%;" />
+                        </div>
+                        <div class="g__col g__col-9 u-text-left">
+                            <h4>Best poster in Education category</h4>
+                            <div class="u-trim">
+                                <p class="micro">Royal College of General Practice Annual Primary Care conference and exhibition 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g__col g__col-12 g__col-auto@medium u-text-center p-top--triple p-top--reset@medium">
+                    <img src="images/cpd-logo.jpg" alt="CPD Logo" style="max-width: 120px;"/>
+                </div>
+                <div class="g__col g__col-12 g__col-auto@medium u-text-center p-top--triple p-top--reset@medium">
+                    <img src="images/unseen-logo.jpg" alt="Unseen Logo" style="max-width: 160px;"/>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -212,18 +299,23 @@
 
             <div class="g">
                 <div class="g__col g__col-12 g__col-4@medium">
-                    <p>For more information or to see how you can get involved, contact the VITA team.</p>
+                    <p class="lede">For more information or to see how you can get involved, contact the VITA team.</p>
                 </div>
 
-                <div class="g__col g__col-12 g__col-4@medium align-right u-text-right@medium">
-                    <a href="#" class="btn btn--primary">Email us</a>
+                <div class="g__col g__col-12 g__col-6@medium align-right u-text-right@medium">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn--shrink btn--primary"><i class="fas fa-envelope"></i> <span class="is--hidden is--visible-inline@medium p-left--half">Email us</span></a>
+                            <a href="#" class="btn btn--shrink btn--grey"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn--shrink btn--grey"><i class="fab fa-facebook-f"></i></a>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
 
     {# E-Learning #}
-    <section style="background-image: url('images/background2.jpg');" class="island--cover p-top--max@xlarge p-bottom--max@xlarge" id="e-learning">
+    <section class="island--cover island--secondary p-top--max@xlarge p-bottom--max@xlarge" id="e-learning">
+        <div class="island--inner-image" style="background-image: url('images/background2.jpg');"></div>
         <div class="wrapper island">
             <div class="wrapper wrapper--thin">
 
@@ -254,15 +346,22 @@
                     </div>
                 </div>
 
-                <div class="g p-top--triple p-top--oct@medium p-bottom--oct@medium p-bottom--quad">
+                <div class="g p-top--triple p-top--oct@medium p-bottom--double">
+                    <div class="g__col g__col-12 g__col-6@medium">
+                        <h3 class="h--underlined">Register interest in our e-learning module</h3>
+                    </div>
+                </div>
+
+                <div class="g p-bottom--oct@medium p-bottom--quad">
                     <div class="g__col g__col-12 g__col-6@medium">
                         <div class="g">
                             <div class="g__col g__col-12 g__col-11@medium">
-                                <h3 class="h--underlined">Register interest in our e-learning module</h3>
-
-                                <div class="p-top--double">
-                                    <p>@todo form here</p>
-                                </div>
+                                {# @todo make this work #}
+                                <form action="#" method="post">
+                                    <input class="input" type="text" id="name" name="name" placeholder="Name">
+                                    <input class="input" type="text" id="organisation" name="organisation" placeholder="Organisation">
+                                    <input class="input" type="email" id="mail" name="email" placeholder="Email Address">
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -273,7 +372,7 @@
                                 <p class="micro">By clicking the ‘Register’ button, you are consenting to the Vita Training and MailChimp processing your data for the purposes of sending you communications regarding our e-learning module. You may unsubscribe at any time. We are committed to protecting any personal data that you may submit to us. Such personal data is obtained only when voluntarily submitted by you. For more information please review our privacy policy.</p>
 
                                 <div class="p-top--half">
-                                    <a href="#" class="btn btn--primary btn--small">Register your interest</a>
+                                    <a href="#" class="btn btn--primary">Register your interest</a>
                                 </div>
                             </div>
                         </div>

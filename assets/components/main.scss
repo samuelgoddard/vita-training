@@ -46,7 +46,7 @@
     @import "atoms/table/table";
     @import "atoms/burger/burger";
     @import "atoms/callout/callout";
-
+    @import "atoms/avatar/avatar";
     @import "atoms/blockquote/blockquote";
     @import "atoms/logo/logo";
     @import "atoms/chevron/chevron";
@@ -96,10 +96,11 @@
     // They are '_' prefixed within the components directory so they don't render in Fractal
 
     // @import "forms/control/control";
-    // @import "forms/input/input";
+    @import "forms/input/input";
+    @import "forms/textarea/textarea";
     // @import "forms/label/label";
     // @import "forms/radio/radio";
-    // @import "forms/select/select";
+    @import "forms/select/select";
     // @import "forms/checkbox/checkbox";
 
     // Utilities

@@ -35,6 +35,9 @@
         .is--visible\@#{$bp} {
             display: block;
         }
+        .is--visible-inline\@#{$bp} {
+            display: inline;
+        }
     }
 }
 
