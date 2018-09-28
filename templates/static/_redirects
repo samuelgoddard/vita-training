@@ -1,2 +1,5 @@
+# Redirect domain aliases to primary domain
+https://vita-training.co.uk/* https://vita-training.com/:splat 301!
+
 # Redirect default Netlify subdomain to primary domain
 https://vita-training.netlify.com/* https://vita-training.com/:splat 301!
