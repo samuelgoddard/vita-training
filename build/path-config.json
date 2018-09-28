@@ -8,7 +8,7 @@
   },
 
   "static": {
-    "src": "assets/static",
+    "src": "templates/static",
     "dest": "./"
   },
 

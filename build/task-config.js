@@ -18,7 +18,6 @@ module.exports = {
   html: true,
   images: true,
   fonts: false,
-  static: false,
   svgSprite: false,
   ghPages: false,
   stylesheets: {
@@ -34,6 +33,11 @@ module.exports = {
     extensions: ["sass", "scss", "css"]
   },
 
+  static: {
+    srcOptions: {
+      dot: true // include dotfiles
+    }
+  },
 
   // Define additional webpack loaders that should be used in all environments. Adds to webpackConfig.module.rules
   // loaders:
